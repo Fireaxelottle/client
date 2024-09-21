@@ -26,6 +26,7 @@ const FileUpload = () => {
      console.log(res.data);
      setUploadedFiles(res.data);
      setSuccess(true);
+     setMessage("Yayyyyyy");
     } catch (err) {
       if (err.response.status === 500) {
         setMessage("There was a problem with the server");
